@@ -1,24 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="inb-7Q-aU1">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Anasayfa-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="Anasayfa" customModule="Homework4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anasayfa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEe-SV-7e4">
+                                <rect key="frame" x="87.666666666666671" y="119" width="217.66666666666663" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="off-3k-ado">
+                                <rect key="frame" x="158.66666666666666" y="369" width="76" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Git &gt; A">
+                                    <color key="baseBackgroundColor" red="0.71350256901240761" green="0.37538383942354375" blue="0.94525744251369204" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="xLo-cC-tcO" kind="show" id="krO-yN-URg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txS-kI-3wS">
+                                <rect key="frame" x="158.66666666666666" y="443" width="76" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Git &gt; X">
+                                    <color key="baseBackgroundColor" red="0.71350256899999998" green="0.37538383939999997" blue="0.94525744249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="kzg-jJ-nHj" kind="show" id="5yy-lK-QiC"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="tintColor"/>
+                        <constraints>
+                            <constraint firstItem="txS-kI-3wS" firstAttribute="top" secondItem="off-3k-ado" secondAttribute="bottom" constant="39.666666666666686" id="AXs-Cg-sXf"/>
+                            <constraint firstItem="txS-kI-3wS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CFV-fR-HbI"/>
+                            <constraint firstItem="iEe-SV-7e4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87.666666666666686" id="bib-ut-GOh"/>
+                            <constraint firstItem="off-3k-ado" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iPB-jb-wE0"/>
+                            <constraint firstItem="off-3k-ado" firstAttribute="top" secondItem="iEe-SV-7e4" secondAttribute="bottom" constant="190" id="nkA-W0-jaw"/>
+                            <constraint firstItem="iEe-SV-7e4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="uuf-Ds-ckK"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="8pa-8B-0ia"/>
+                    <connections>
+                        <segue destination="xLo-cC-tcO" kind="show" id="Jxt-mo-R1y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="740" y="322"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eWf-7j-sy1">
+            <objects>
+                <viewController id="xLo-cC-tcO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6PN-8l-dvD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sayfa A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEj-Zk-qzN">
+                                <rect key="frame" x="123" y="119" width="147" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3I-gj-N3c">
+                                <rect key="frame" x="158.66666666666666" y="377" width="75.666666666666657" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Git &gt; B">
+                                    <color key="baseBackgroundColor" red="0.71350256899999998" green="0.37538383939999997" blue="0.94525744249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fxd-Xb-nFC"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="TEj-Zk-qzN" firstAttribute="top" secondItem="fxd-Xb-nFC" secondAttribute="top" constant="16" id="7Ps-9K-j5A"/>
+                            <constraint firstItem="F3I-gj-N3c" firstAttribute="top" secondItem="TEj-Zk-qzN" secondAttribute="bottom" constant="204" id="9fV-id-xer"/>
+                            <constraint firstItem="TEj-Zk-qzN" firstAttribute="centerX" secondItem="6PN-8l-dvD" secondAttribute="centerX" id="d06-KX-Tyq"/>
+                            <constraint firstItem="F3I-gj-N3c" firstAttribute="centerX" secondItem="6PN-8l-dvD" secondAttribute="centerX" id="iwe-lh-OjA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="N6A-9y-Lrf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iGe-BL-nfg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1732" y="10"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JmF-Kc-9dl">
+            <objects>
+                <viewController id="kzg-jJ-nHj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RPo-Fa-dge">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sayfa X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0q-CM-DNV">
+                                <rect key="frame" x="115" y="119" width="163" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eD9-Aa-U3M">
+                                <rect key="frame" x="161.33333333333334" y="410.33333333333331" width="70.333333333333343" height="31.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Git &gt; Y">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="Helvetica"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" red="0.71350256899999998" green="0.37538383939999997" blue="0.94525744249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zeo-A8-CCP"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstItem="n0q-CM-DNV" firstAttribute="top" secondItem="Zeo-A8-CCP" secondAttribute="top" constant="16" id="8yl-Wh-h7I"/>
+                            <constraint firstItem="n0q-CM-DNV" firstAttribute="centerX" secondItem="RPo-Fa-dge" secondAttribute="centerX" id="XCM-l9-RZX"/>
+                            <constraint firstItem="eD9-Aa-U3M" firstAttribute="centerY" secondItem="RPo-Fa-dge" secondAttribute="centerY" id="bdx-Pi-eFE"/>
+                            <constraint firstItem="eD9-Aa-U3M" firstAttribute="centerX" secondItem="RPo-Fa-dge" secondAttribute="centerX" id="fCA-tZ-NGP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fpl-FU-fJP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="72u-a4-Jpa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724" y="672"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YoQ-k0-3hT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="inb-7Q-aU1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mxQ-Kh-GkM">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2Rn-9V-1N2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vnz-Df-UOk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Jxt-mo-R1y"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
